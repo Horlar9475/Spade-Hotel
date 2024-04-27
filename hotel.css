@@ -859,7 +859,7 @@ footer{
                 background: none;
             }
             #input{
-                width: auto;
+                width: 100%;
                 background-color: rgba(255, 255, 255, 0);
                 border-radius: 0;
                 border-bottom: 2px solid #1ed6fe;
