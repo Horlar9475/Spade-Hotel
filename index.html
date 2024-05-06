@@ -91,80 +91,74 @@
             <h3>Experience an exquisite blend of contemporary design and timeless charm across our range of meticulously curated rooms and suites.</h3> 
         </div>
         <div id="roomdiv1" data-aos="fade-right">
-            <a href="#">
-                <div id="roomsub1">
+            <div id="roomsub1" onclick="LuxRm()">
                 <h2 style="font-size: 28px;">Luxurious Room</h2>
                 <p style="margin-bottom: 20px; font-size: large;">2 Adult 1 Child</p>
                 <p style="font-size: large;">Started from <b style="font-size: 20px;">&#8358;30,000</b></p>
             </div>
-            </a>
-            <a href="#">
-                <div id="roomsub2">
+
+            <div id="roomsub2" onclick="LuxRm2()">
                 <h2 style="font-size: 28px;">Couple's Room</h2>
                 <p style="margin-bottom: 20px; font-size: large;">2 Adult</p>
                 <p style="font-size: large;">Started from <b style="font-size: 20px;">&#8358;35,000</b></p>
             </div>
-            </a>
-            <a href="#">
-                <div id="roomsub3">
+
+            <div id="roomsub3" onclick="LuxRm3()">
                 <h2 style="font-size: 28px;">Family Room</h2>
                 <p style="margin-bottom: 20px; font-size: large;">2 Adult 2 - 3 Child</p>
                 <p style="font-size: large;">Started from <b style="font-size: 20px;">&#8358;45,000</b></p>
             </div>
-            </a>
-            <a href="#">
-                <div id="roomsub4">
+            
+            <div id="roomsub4" onclick="LuxRm4()">
                 <h2 style="font-size: 28px;">Luxurious Room</h2>
                 <p style="margin-bottom: 20px; font-size: large;">Single Adult</p>
                 <p style="font-size: large;">Started from <b style="font-size: 20px;">&#8358;30,000</b></p>
             </div>
-            </a>
-            <a href="#">
-                <div id="roomsub5">
+            
+            <div id="roomsub5" onclick="LuxRm5()">
                 <h2 style="font-size: 25px;">Exclusive Family Suite</h2>
                 <p style="margin-bottom: 20px; font-size: large;">2 Adult 2 - 3 Child</p>
                 <p style="font-size: large;">Started from <b style="font-size: 20px;">&#8358;50,000</b></p>
             </div>
-            </a>
-            <a href="#">
-                <div id="roomsub6">
+            
+            <div id="roomsub6" onclick="LuxRm6()">
                 <h2 style="font-size: 28px;">V.I.P Suite</h2>
                 <p style="margin-bottom: 20px; font-size: large;">2 Adults</p>
                 <p style="font-size: large;">Started from <b style="font-size: 20px;">&#8358;100,000</b></p>
             </div>
-            </a>
-            <a href="#">
-                <div id="roomsub7">
+            
+            <div id="roomsub7" onclick="LuxRm7()">
                 <h2 style="font-size: 28px;">V.V.I.P</h2>
                 <p style="margin-bottom: 20px; font-size: large;">Multipurpose</p>
                 <p style="font-size: large;">Started from <b style="font-size: 20px;">&#8358;150,000</b></p>
             </div>
-            </a>
-            <a href="#">
-                <div id="roomsub8">
+            
+            <div id="roomsub8" onclick="LuxRm8()">
                 <h2 style="font-size: 25px;">Penthouse Apartment</h2>
                 <p style="margin-bottom: 20px; font-size: large;">Multipurpose Apartment</p>
                 <p style="font-size: large;">Started from <b style="font-size: 20px;">&#8358;250,000</b></p>
             </div>
-            </a>
+
         </div>
-        <div class="payback" id="Payback1">
-            <div id="X_pay">
-                <p><a style="text-decoration: none; color: black;" href="#rooms">✖</a></p>
-            </div>
+    </section>
+
+    <div id="Payback">
         <div id="payment1">
             <div id="paypic">
-                <b>Amount Due &#8702; &#8358;30,000</b>
+                <b>Amount Due &#8702; &#8358;<b id="rmPrice">30,000</b></b>
             </div>
             <div id="paytxt">
-                <h1>Payment</h1>
-                <form action="">
+                <div id="Pmnt">
+                    <h1>Payment</h1>
+                    <p id="X_pay" onclick="cancelPaytab()">❌</p>
+                </div>
+                <form action="#" method="post">
                     <label for="Email">Email Address</label>
                     <input id="Email" type="email" placeholder="Please Provide E-mail">
                     <label for="Card_Number">Card Number</label>
                     <input id="Card_Number" type="text" placeholder="Card Number" maxlength="16">
                     <label for="Expiration Date">Expiration Date</label>
-                    <input type="date">
+                    <input id="expDate" type="date">
                     <div id="CvvPass">
                         <div id="cvv">
                             <label for="CVV">Input CVV</label>
@@ -178,14 +172,14 @@
                     <div id="terms">
                         <input type="checkbox">
                         <p><a href="">Agree to terms and Condition.</a></p>
-                    </div>
-                    <div id="btn">
-                        <button>Submit</button>
-                    </div>
+                    </div>  
                 </form>
+                <div id="btn" onclick="paymntSb()">
+                    <button>Submit</button>
+                </div>
             </div>
-        </div>  
-    </section>
+        </div>
+    </div>
 
     <div id="divider"></div>
 
@@ -247,10 +241,9 @@
             <b style="color: aliceblue;">Copyright &#169;2023 All rights reserved | Spade <sup>&spades;</sup></b>
         </div>
     </footer>
-    <!-- <div class="goTop">
+    <div class="goTop">
         <a href="#nav">&spades;</a>
-    </div> -->
-    <!-- <div id="divider"></div> -->
+    </div>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
@@ -261,5 +254,6 @@
         $("#departureDate").datepicker();
     });
 </script>
+<script src="main.js"></script>
 </body>
 </html>
