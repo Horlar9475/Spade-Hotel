@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 body{
     overflow-x: hidden;
@@ -11,6 +12,7 @@ body{
 section{
     border: 1px solid none;
     height: 100svh;
+    overflow-y: hidden;
     & #background{
         height: 100svh;
         width: 100svw;
@@ -245,7 +247,7 @@ select:focus{
     }
 }
 #rooms{
-    height: 100svh;
+    height: fit-content;
     width: 100svw;
     position: static;
     display: flex;
@@ -255,15 +257,12 @@ select:focus{
     padding: 50px 20px;
     color: whitesmoke;
     & h1{
+        height: fit-content;
         font-size: 30px;
         font-weight: bolder;
         font-family: 'Pacifico', cursive;
     }
     & #roomtxt{
-        height: 70px;
-        width: 800px;
-        border: 1px solid none;
-        margin-top: -20px;
         & h3{
             font-size: 20px;
             font-weight: bolder;
@@ -593,7 +592,7 @@ select:focus{
     background: linear-gradient(141deg, olive 10%, red 50%, #1ed6fe 100%);
 }
 #ads{
-    height: 450px;
+    height: fit-content;
     background-color: #353535;
     display: flex;
     flex-wrap: wrap;
@@ -603,7 +602,6 @@ select:focus{
     overflow: hidden;
     justify-content: center;
     & #offertxt{
-        height: 50px;
         width: 100vw;
         text-align: center;
         font-family: 'Dancing Script', cursive;
@@ -696,7 +694,7 @@ select:focus{
     }
     #offer2:hover{
         #offersub2{
-            height: 140px;
+            height: 155px;
         }
     }
     #offer3:hover{
