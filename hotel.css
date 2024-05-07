@@ -882,14 +882,11 @@ footer{
         gap: 0;
         padding: 10px;
         h1{
-            width: fit-content;
-            margin: auto;
+            width: 100%;
         }
         & #roomtxt{
             height: fit-content;
-            width: 90svw;
-            margin: auto;
-            text-align: center;
+            width: 100%;
             h3{
                 font-size: 11px;
             }
