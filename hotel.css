@@ -33,6 +33,7 @@ section{
         padding-left: 50px;
         padding-right: 50px;
         box-shadow: 0px 2px 5px #1ed6fe;
+        overflow: visible;
         & #logo{
             border: 1px solid none;
             height: 70px;
@@ -83,11 +84,34 @@ section{
         }
         & #burger{
             height: 30px;
-            width: 30px;
-            background-image: url(menus.png);
-            background-size: cover;
+            width: auto;
             display: none;
+            z-index: 1;
+            cursor: pointer;
+            #closeMenu{
+                height: 50%;
+                margin: 5px;
+                width: auto;
+                display: none;
+            }
         }
+    }
+}
+#burgerDrp{
+    position: absolute;
+    height: fit-content;
+    width: 40%;
+    right: 10%;
+    top: 55%;
+    background-color: rgb(255, 255, 255, 0.4);
+    display: none;
+    ul li{
+        list-style: none;
+        margin: 10px;
+        cursor: pointer;
+        font-family: 'Pacifico', cursive;
+        color: #1ed6fe;
+        border-bottom: 1px solid #1ed6fe;
     }
 }
 

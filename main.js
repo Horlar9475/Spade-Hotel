@@ -90,3 +90,18 @@ function LuxRm8(){
     rmPrice.innerHTML = '250,000'
     payPic.style.backgroundImage = 'url(IMG_20231225_205900.jpg)'
 }
+
+var burger = document.getElementById('burger')
+var burgerDrp = document.getElementById('burgerDrp')
+var openMenu = document.getElementById('openMenu')
+var closeMenu = document.getElementById('closeMenu')
+function burgerDropdown(){
+    burgerDrp.style.display = 'grid'
+    openMenu.style.display = 'none'
+    closeMenu.style.display = 'block'
+}
+function closeBurger(){
+    burgerDrp.style.display = 'none'
+    openMenu.style.display = 'block'
+    closeMenu.style.display = 'none'
+}
