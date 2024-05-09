@@ -97,6 +97,8 @@ var openMenu = document.getElementById('openMenu')
 var closeMenu = document.getElementById('closeMenu')
 function burgerDropdown(){
     burgerDrp.style.display = 'grid'
+    burgerDrp.style.height = 'fit-content'
+    burgerDrp.style.width = '40%'
     openMenu.style.display = 'none'
     closeMenu.style.display = 'block'
 }
