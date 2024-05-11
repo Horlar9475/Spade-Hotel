@@ -104,7 +104,7 @@ section{
     right: 0%;
     top: 10%;
     background-color: #fff;
-    transition: 1s ease-in-out;
+    transition: .5s ease-in;
     z-index: 10;
     ul li{
         list-style: none;
