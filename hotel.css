@@ -98,14 +98,14 @@ section{
     }
 }
 #burgerDrp{
-    position: absolute;
+    position: fixed;
     height: 0px;
     width: 0px;
-    right: 10%;
-    top: 55%;
-    background-color: rgb(255, 255, 255, 0.4);
-    display: none;
+    right: 0%;
+    top: 15%;
+    background-color: #fff;
     transition: 1s ease-in-out;
+    z-index: 10;
     ul li{
         list-style: none;
         margin: 10px;

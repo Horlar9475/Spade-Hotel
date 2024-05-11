@@ -98,12 +98,17 @@ var closeMenu = document.getElementById('closeMenu')
 function burgerDropdown(){
     burgerDrp.style.display = 'grid'
     burgerDrp.style.height = 'fit-content'
-    burgerDrp.style.width = '40%'
+    burgerDrp.style.width = '100%'
     openMenu.style.display = 'none'
     closeMenu.style.display = 'block'
+    document.querySelector('body').onscroll = function(){
+        burgerDrp.style.width = '0'
+        openMenu.style.display = 'block'
+        closeMenu.style.display = 'none'
+    }
 }
 function closeBurger(){
-    burgerDrp.style.display = 'none'
+    burgerDrp.style.width = '0'
     openMenu.style.display = 'block'
     closeMenu.style.display = 'none'
 }
